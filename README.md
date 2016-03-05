@@ -8,6 +8,7 @@ The language has a simple BASIC-like grammar, and has a small number of keywords
   (1) All non-empty lines should have the form '<keyword> <argument 1> <argument 2> ...'
 
   (2) Currently supported keywords :
+  
       - in <expr> : Input a value from user
       
       - out <expr> ... : Display a value on the screen
