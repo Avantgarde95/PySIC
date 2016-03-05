@@ -1,11 +1,13 @@
 # PySIC
 A simple programming language with a BASIC-like grammar.
+
 This language is not suitable for practical use; There are few keywords and the performance is very bad.
+
 I just created this to study about implementing a programming language, but you can play with this freely if you want :)
 
 - Latest version : 1.0
 
-- Usage : python pysic.py (source.psc)
+- Usage : python pysic.py YourSourceFile.psc
 
 - Simple documentation :
 
@@ -31,12 +33,12 @@ I just created this to study about implementing a programming language, but you 
       - exit : Terminate the program
       
       - if / if= / if== / if> / if< / if>= / if<= / if!= <expr1> <expr2> <expr3> <expr4> :
-        Compare <expr1> and <expr2>. If it is true, move to the block <expr3>.
-        Otherwise, move the block <expr4>. (if / if= / if== have the same meaning!)
+              Compare <expr1> and <expr2>. If it is true, move to the block <expr3>.
+              Otherwise, move the block <expr4>. (if / if= / if== have the same meaning!)
       
       - add / sub / mul / div <expr1> <expr2> <expr3> :
-        Add / Substitute / Multiply / Divide <expr2> to (by) <expr3>, 
-        and set the variable with name <expr1> to that value.
+              Add / Substitute / Multiply / Divide <expr2> to (by) <expr3>, 
+              and set the variable with name <expr1> to that value.
 
 
     (3) What I will add in the next version :
