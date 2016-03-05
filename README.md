@@ -25,6 +25,6 @@ The language has a simple BASIC-like grammar, and has a small number of keywords
       
       - exit : Terminate the program
       
-      - if / if= / if== / if> / if< / if>= / if<= / if != <expr1> <expr2> <expr3> <expr4> : Compare <expr1> and <expr2>. If it is true, move to the block <expr3>. Otherwise, move the block <expr4>. (if / if= / if== have the same meaning!)
+      - if / if= / if== / if> / if< / if>= / if<= / if!= <expr1> <expr2> <expr3> <expr4> : Compare <expr1> and <expr2>. If it is true, move to the block <expr3>. Otherwise, move the block <expr4>. (if / if= / if== have the same meaning!)
       
       - add / sub / mul / div <expr1> <expr2> <expr3> : Add / Substitute / Multiply / Divide <expr2> to (by) <expr3>, and set the variable with name <expr1> to that value.
