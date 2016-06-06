@@ -2,6 +2,7 @@ import sys, os
 from pysic.lib.shell import PsShell
 from pysic.lib.parse import PsParser
 from pysic.lib.interpret import PsInterpreter
+from pysic.lib.exception import PsParserInterrupt
 
 def print_usage():
     print 'Usage : python pysic.py source.psc\n'
@@ -45,8 +46,17 @@ if __name__ == '__main__':
 
     ps.start()
 
-    interpreter.digest(*parser.parse(source))
-    interpreter.run()
+    flag_interpret = True
+
+    try:
+        tokendata = parser.parse(source)
+    except PsParserInterrupt as e:
+        ps.error(e)
+        flag_interpret = False
+
+    if flag_interpret:
+        interpreter.digest(*tokendata)
+        interpreter.run()
 
     ps.end()
 
