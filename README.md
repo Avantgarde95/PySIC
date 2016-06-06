@@ -45,9 +45,6 @@ I just created this to study about implementing a programming language, but you 
 
     (3) What I will add in the next version :
         
-        - Make the parser to display the SyntaxError message on the pysic shell
-          after it raises an parsing error (PsParserInterrupt in exception.py).
-        
         - Add some data structures like list, etc.
         
         - Currently, when you write a string in the source file,
