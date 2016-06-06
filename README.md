@@ -5,7 +5,7 @@ This language is not suitable for practical use; There are few keywords and the 
 
 I just created this to study about implementing a programming language, but you can play with this freely if you want :)
 
-- Latest version : 1.0
+- Current version : 1.1
 
 - Usage : python pysic.py YourSourceFile.psc
 
